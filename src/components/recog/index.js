@@ -89,7 +89,7 @@ export default function RecogApp () {
             </div>
             { imageFile && <img id='recogImage' className='imageUploadPreview' src={imageFile} alt='Upload be predicted'  />}
           </div>
-          {imageFile && <Button variant="contained" onClick={handlePrediction} loading={loading ? 1 : 0}>What is this? </Button>}
+          {imageFile && <Button variant="contained" onClick={handlePrediction} loading={loading ? 1 : 0}>Classify </Button>}
           {imagePrediction && 
           <div>
             <h2>Predictions</h2>
