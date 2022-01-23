@@ -29,7 +29,7 @@ export default function SimpleBottomNavigation({ theme, changeTheme }) {
         }
       }}
     >
-      <BottomNavigationAction value='https://johndao.com/blog' label="About" icon={<HelpCenterIcon />} />
+      {/* <BottomNavigationAction value='https://johndao.com/blog' label="About" icon={<HelpCenterIcon />} /> */}
       <BottomNavigationAction value='https://github.com/jnddao' label="Github" icon={<GitHubIcon />} />
       <BottomNavigationAction value='https://johndao.com' label="Me" icon={<EmojiPeopleIcon />} />
       <BottomNavigationAction value='theme' label="Theme" icon={theme === 'light' ? <LightModeIcon /> : <DarkModeIcon />} />

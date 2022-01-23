@@ -45,7 +45,6 @@ export default function WitApp () {
       setLoading(true);
       const recogImage = document.getElementById('recogImage');
       const predictions = await model.classify(recogImage);
-      console.log(predictions);
       setimagePrediction(predictions);
       setLoading(false);
     } else {
