@@ -1,7 +1,7 @@
 import * as React from 'react';
 import BottomNavigation from '@mui/material/BottomNavigation';
 import BottomNavigationAction from '@mui/material/BottomNavigationAction';
-import HelpCenterIcon from '@mui/icons-material/HelpCenter';
+// import HelpCenterIcon from '@mui/icons-material/HelpCenter';
 import GitHubIcon from '@mui/icons-material/GitHub';
 import EmojiPeopleIcon from '@mui/icons-material/EmojiPeople';
 import DarkModeIcon from '@mui/icons-material/DarkMode';
@@ -30,8 +30,8 @@ export default function SimpleBottomNavigation({ theme, changeTheme }) {
       }}
     >
       {/* <BottomNavigationAction value='https://johndao.com/blog' label="About" icon={<HelpCenterIcon />} /> */}
-      <BottomNavigationAction value='https://github.com/jnddao' label="Github" icon={<GitHubIcon />} />
       <BottomNavigationAction value='https://johndao.com' label="Me" icon={<EmojiPeopleIcon />} />
+      <BottomNavigationAction value='https://github.com/jnddao' label="Github" icon={<GitHubIcon />} />
       <BottomNavigationAction value='theme' label="Theme" icon={theme === 'light' ? <LightModeIcon /> : <DarkModeIcon />} />
     </BottomNavigation>
   </Paper>
