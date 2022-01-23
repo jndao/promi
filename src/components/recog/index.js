@@ -15,11 +15,11 @@ const mobilenet = require('@tensorflow-models/mobilenet');
 export default function RecogApp () {
   const [model, setModel] = useState(false);
   const [imageFile, setImageFile] = useState(false);
-  const [imagePrediction, setimagePrediction] = useState(false);
+  const [imagePrediction, setImagePrediction] = useState(false);
   const [loading, setLoading] = useState(false);
 
   const handleFileInput = (event) => {
-    setimagePrediction(false);
+    setImagePrediction(false);
 
     if (event.target.files[0]) {
       // converts image to url
@@ -30,14 +30,14 @@ export default function RecogApp () {
   }
 
   const clearUserInput = (event) => {
-    setimagePrediction(false);
+    setImagePrediction(false);
     setImageFile(false);
 
   }
 
   const handlePrediction = async (event) => {
     // clear previous predictions
-    setimagePrediction(false);
+    setImagePrediction(false);
 
     if (imageFile) {
 
@@ -45,7 +45,7 @@ export default function RecogApp () {
       setLoading(true);
       const recogImage = document.getElementById('recogImage');
       const predictions = await model.classify(recogImage);
-      setimagePrediction(predictions);
+      setImagePrediction(predictions);
       setLoading(false);
     } else {
       alert('Please upload an image');
