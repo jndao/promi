@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 
-export const WitAppWrapper = styled.div`
+export const RecogAppWrapper = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
@@ -48,4 +48,4 @@ export const WitAppWrapper = styled.div`
   }
 `;
 
-export default WitAppWrapper;
+export default RecogAppWrapper;

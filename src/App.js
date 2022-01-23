@@ -1,11 +1,11 @@
 import Layout from './core/layout';
 
-import WitApp from './components/witapp';
+import RecogApp from './components/recog';
 
 function App() {
   return (
     <Layout>
-      <WitApp />
+      <RecogApp />
     </Layout>
 
   );

@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 
-import WitAppWrapper from './index.styled';
+import RecogAppWrapper from './index.styled';
 
 // mui
 import Button from '@mui/material/Button';
@@ -12,7 +12,7 @@ import { isMobile } from 'react-device-detect';
 import '@tensorflow/tfjs-backend-webgl';
 const mobilenet = require('@tensorflow-models/mobilenet');
 
-export default function WitApp () {
+export default function RecogApp () {
   const [model, setModel] = useState(false);
   const [imageFile, setImageFile] = useState(false);
   const [imagePrediction, setimagePrediction] = useState(false);
@@ -62,7 +62,7 @@ export default function WitApp () {
   }, [])
 
   return (
-    <WitAppWrapper>
+    <RecogAppWrapper>
     {!model 
       ? <> <CircularProgress /><br />Loading model...</>
       : <>
@@ -103,6 +103,6 @@ export default function WitApp () {
           }
         </>
         }
-    </WitAppWrapper>
+    </RecogAppWrapper>
   );
 }
