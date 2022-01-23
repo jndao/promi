@@ -70,8 +70,8 @@ export default function WitApp () {
             <h1 className='appHeader'>Promi</h1>
           </a>
           <div>
-            An app that predicts what is contained within a provided image <br />
-            <small style={{opacity: 0.4}}>For entertainment purposes only</small> <br /><br />
+            An app that recognises what is contained within a provided image <br />
+            <small style={{opacity: 0.75}}>For entertainment purposes only</small> <br /><br />
 
             Upload an image below to begin <br />
           </div>
@@ -93,7 +93,7 @@ export default function WitApp () {
           {imagePrediction && 
           <div>
             <h2>Predictions</h2>
-            <small style={{opacity: 0.5}}>Includes confidence of predictions as a percentage</small>
+            <small style={{opacity: 0.75}}>Includes confidence of predictions as a percentage</small>
             <div className='predictionList'>{
               imagePrediction.map((item, key) => {
                 return (<h3 className={`predictionItem ${key === 0 && 'firstPrediction'}`} key={key}><span className='predictionLabel' >{item.className}</span>: <span className='predictionProbability' >{Math.round(item.probability * 100)}%</span></h3>);
