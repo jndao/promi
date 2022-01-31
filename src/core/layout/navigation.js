@@ -7,7 +7,7 @@ import EmojiPeopleIcon from '@mui/icons-material/EmojiPeople';
 import DarkModeIcon from '@mui/icons-material/DarkMode';
 import LightModeIcon from '@mui/icons-material/LightMode';
 import Paper from '@mui/material/Paper';
-
+import QuestionMarkIcon from '@mui/icons-material/QuestionMark';
 
 export default function SimpleBottomNavigation({ theme, changeTheme }) {
 
@@ -30,6 +30,7 @@ export default function SimpleBottomNavigation({ theme, changeTheme }) {
       }}
     >
       {/* <BottomNavigationAction value='https://johndao.com/blog' label="About" icon={<HelpCenterIcon />} /> */}
+      <BottomNavigationAction value='https://johndao.com/blog/how-to-build-an-image-classifier-with-react' label="About" icon={<QuestionMarkIcon />} />
       <BottomNavigationAction value='https://johndao.com' label="Me" icon={<EmojiPeopleIcon />} />
       <BottomNavigationAction value='https://github.com/jnddao' label="Github" icon={<GitHubIcon />} />
       <BottomNavigationAction value='theme' label="Theme" icon={theme === 'light' ? <LightModeIcon /> : <DarkModeIcon />} />
